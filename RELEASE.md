@@ -1,10 +1,3 @@
-# Text pro popis releasu
-
-Zkopíruj do popisu releasu na GitHubu (`Releases` → `Draft a new release`).
-Tag: `v0.1.0`, název: `0.1.0 — demo ukázka`.
-
----
-
 ## ⚠️ Demo ukázka
 
 Tohle **není hotový addon**. Je to ukázka, aby se dalo vyzkoušet, **jak zní český dabing

@@ -251,7 +251,22 @@ nenačte se **křivě**: chybějící nahrávka se přehraje anglicky. Velikost 
 (`--part-size 800`); skript sám zkontroluje, že se žádná nad 2 GiB nedostala, a dopíše
 `SHA256SUMS.txt`.
 
-Text pro popis releasu je v `RELEASE.md`.
+### Nahrání na GitHub
+
+`RELEASE.md` je **přímo text popisu releasu**, nic se z něj nemaže:
+
+```sh
+cd github
+gh release create v0.1.0 ../dist/release/* \
+    -R ptrj/SpokenCzech --target main \
+    --title "0.1.0 - demo ukazka" --notes-file RELEASE.md --draft
+```
+
+- `--draft` nechá release neveřejný, dokud si ho neprohlédneš. Zveřejní se pak
+  `gh release edit v0.1.0 -R ptrj/SpokenCzech --draft=false`.
+- Když se jeden soubor při nahrávání pretrhne, nemusí se dělat všechno znovu:
+  `gh release upload v0.1.0 ../dist/release/<soubor> -R ptrj/SpokenCzech --clobber`.
+- `-R` a `--target` jsou potřeba jen tehdy, když adresář není klon toho repozitáře.
 
 Po přidání zvuků je potřeba **úplný restart hry**, ne `/reload`: nové zvukové soubory klient
 načte až při startu. Lepidlu samotnému `/reload` stačí.
