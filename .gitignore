@@ -1,0 +1,17 @@
+# Zdrojove balicky (stovky MB az GB) a vsechno, co z nich vznikne
+*.zip
+_work/
+dist/
+
+# Hotove datove addony
+SpokenReadablesAudio_csCZ/
+SpokenQuestsAudio_csCZ/
+SpokenQuestsAudioGossip_csCZ/
+SpokenQuestsAudioChatter_csCZ/
+
+# Zvuk nikdy
+*.ogg
+*.mp3
+
+__pycache__/
+*.pyc

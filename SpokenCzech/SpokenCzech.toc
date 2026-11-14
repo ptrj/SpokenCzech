@@ -1,0 +1,13 @@
+## Interface: 11509, 20506, 16001
+## Title: |cffb48cffSpoken|r Czech
+## Notes: Propoji ceske balicky WoWF.cz s addonem Spoken: prida jazyk csCZ, cesky text do Kompendia a questu a pismo s diakritikou.|n|nZadny soubor Spokenu nemeni - vsechno dela za behu. Vypnutim se Spoken vrati k anglictine.
+## Version: 0.1.0
+## Author: WoWF.cz + Spoken
+## IconTexture: Interface\AddOns\SpokenCzech\Textures\AddonIcon.tga
+## Dependencies: Spoken
+## OptionalDeps: Spoken_Readables, Spoken_Quests
+## Group: Spoken
+## X-Part-Of: Spoken
+## X-Credits: Cesky preklad a dabing WoWF.cz (WowfCZ, autor Fejac). Spoken: rusty.
+
+SpokenCzech.lua
